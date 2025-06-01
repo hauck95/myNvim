@@ -7,7 +7,7 @@ require("config.options")
 --keymaps
 require("config.keymaps")
 
---GODOT STUFF
+--GODOT
 -- paths to check for project.godot file
 local paths_to_check = {'/', '/../'}
 local is_godot_project = false
