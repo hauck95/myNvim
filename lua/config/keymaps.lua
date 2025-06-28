@@ -6,13 +6,13 @@ vim.g.mapleader = " "
 --Telescope
 vim.keymap.set('n', '<leader>ff', '<Cmd>Telescope find_files <CR>', { desc = 'Find files with Telescope' })
 vim.keymap.set('n', '<leader>fo', '<Cmd>Telescope oldfiles<CR>', { desc = 'Find files with Telescope' })
+vim.keymap.set('n', '<ESC>', '<Cmd>noh<CR>')
 
 --Oil
-vim.keymap.set('n', '<leader>e', ':Oil<return>')
+vim.keymap.set('n', '<leader>e', '<Cmd>Oil<CR>')
 
 --lsp
 vim.keymap.set('n', 'gd', '<Cmd>lua vim.lsp.buf.definition()<CR>')
 
-vim.keymap.set('n', '<leader>xx', function()
-  vim.diagnostic.enable(not vim.diagnostic.is_enabled())
-end, { silent = true, noremap = true })
+--Trouble
+keymap('n', "<leader>xx", "<cmd>Trouble diagnostics toggle<cr>")
