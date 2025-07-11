@@ -5,7 +5,8 @@ vim.g.mapleader = " "
 
 --Telescope
 vim.keymap.set('n', '<leader>ff', '<Cmd>Telescope find_files <CR>', { desc = 'Find files with Telescope' })
-vim.keymap.set('n', '<leader>fo', '<Cmd>Telescope oldfiles<CR>', { desc = 'Find files with Telescope' })
+vim.keymap.set('n', '<leader>fo', '<Cmd>Telescope oldfiles<CR>', { desc = 'Find old files with Telescope' })
+vim.keymap.set('n', '<leader>fg', '<Cmd>Telescope live_grep<CR>', { desc = 'Search in files with Telescope' })
 vim.keymap.set('n', '<ESC>', '<Cmd>noh<CR>')
 
 --Oil
